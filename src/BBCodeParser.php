@@ -29,7 +29,7 @@ class BBCodeParser
             'content' => '$1'
         ],
         'size' => [
-            'pattern' => '/\[size\=([1-7])\](.*?)\[\/size\]/s',
+            'pattern' => '/\[size\=(\s|)([0-3]?[0-9]|40)(pt|px|)\](.*)\[\/size\]/s',
             'replace' => '<font size="$1">$2</font>',
             'content' => '$2'
         ],
